@@ -1,12 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>first page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                padding: 31px;
+                background-color: darkgrey;
+            }
+
+        body
+        {
+            font-family: "Sofia";
+            font-size: 22px;
+        }
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 3px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+    </style>
 </head>
-<body>
-    <h1>This is contact page </h1>
+<body style="background-image: url(https://video-images.vice.com/articles/5bc5dd0ce15c3a0006a29a01/lede/1539694175175-Taj-Mumbai-If-These-Walls-Could-Talk-5-of-12.jpeg?crop=1xw%3A0.888425925925926xh%3Bcenter%2Ccenter&resize=2000%3A*); background-size:100% 181%">
+    <h1 style="text-align:center;"><p style="font-family:cursive;">WELCOME TO HOTEL TAJ</p></h1>
+
+    <ul>
+        <li><a href="http://t1.gstatic.com/images?q=tbn:ANd9GcR7QFNZk3B1Kdp9IcaDRgv-CCZ4GVVUEPQv8CIxxDbhurbV-26N"> <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcR7QFNZk3B1Kdp9IcaDRgv-CCZ4GVVUEPQv8CIxxDbhurbV-26N" alt="hotel taj" width="34" height="14"> </a></li>
+        <li><a href="#home">  Home  </a></li>
+        <li><a href="#news">  News  </a></li>
+        <li><a href="#news">  Rooms  </a></li>
+        <li><a href="#news">  Food Zone  </a></li>
+        <li><a href="#news">  Game Zone  </a></li>
+        <li><a href="#news">  Management  </a></li>
+        <li><a href="#contact">  Contact  </a></li>
+        <li><a href="#about">  About  </a></li>
+    </ul>
+    <h2 style="text-align:center;"><p style="font-family:sofia;">...Book A Stay...</p></h2>
+
+    <form action="https://www.tajhotels.com/">
+
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="birthday">Date Of Birth</label><br>
+                <input type="date" id="birthday" name="birthday" placeholder="Date of Birth"><br>
+
+               
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">India</option>
+                    <option value="usa">Germany</option>
+                    <option value="usa">China</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:30px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
 </body>
-</html>
+</html>    
